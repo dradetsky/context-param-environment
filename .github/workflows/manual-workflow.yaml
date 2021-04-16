@@ -12,7 +12,7 @@ on:
 
 jobs:
   some-job:
-    environment: ${{ github.event.inputs.myenv }}
+    environment: github.event.inputs.myenv
     name: some job
     steps:
       - name: say hi
