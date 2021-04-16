@@ -1,0 +1,21 @@
+############################################################
+# Auto generated. DO NOT CHANGE!
+############################################################
+name: manual stuff
+on:
+  workflow_dispatch:
+    inputs:
+      myenv:
+        description: the env to run on
+        default: dev
+        required: true
+
+jobs:
+  some-job:
+    environment: ${{ github.event.inputs.myenv }}
+    name: some job
+    steps:
+      - name: say hi
+        run: echo hi
+      - name: show env
+        run: echo ${{ github.event.inputs.myenv }}
