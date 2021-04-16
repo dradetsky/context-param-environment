@@ -20,8 +20,5 @@ jobs:
       - name: say hi
         run: echo hi
       - name: show env
-        run: echo ${{ github.event.inputs.myenv }}
-      - name: show all
         run: |
-          echo ${{ github }}
-          echo ${{ github.event }}
+          echo "${{ github.event.inputs.myenv }}"
