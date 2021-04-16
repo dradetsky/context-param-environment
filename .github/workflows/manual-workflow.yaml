@@ -22,4 +22,6 @@ jobs:
       - name: show env
         run: echo ${{ github.event.inputs.myenv }}
       - name: show all
-        run: echo ${{ github }}
+        run: |
+          echo ${{ github }}
+          echo ${{ github.event }}
