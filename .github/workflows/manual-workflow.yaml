@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
     inputs:
       myenv:
-        description: the env to run on
-        default: dev
+        description: 'the env to run on'
+        default: 'dev'
         required: true
 
 jobs:
