@@ -13,7 +13,7 @@ on:
 jobs:
   some-job:
     # environment: github.event.inputs.myenv
-    environment: ${{ github.event.inputs.myenv }}
+    # environment: ${{ github.event.inputs.myenv }}
     runs-on: ubuntu-20.04
     name: some job
     steps:
@@ -21,3 +21,5 @@ jobs:
         run: echo hi
       - name: show env
         run: echo ${{ github.event.inputs.myenv }}
+      - name: show all
+        run: echo ${{ github }}
