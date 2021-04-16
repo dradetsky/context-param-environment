@@ -11,7 +11,7 @@ on:
         required: true
 
 jobs:
-  some-job:
+  some_job:
     environment: ${{ github.event.inputs.myenv }}
     runs-on: ubuntu-20.04
     name: some job
